@@ -1,0 +1,46 @@
+---
+import { FallingDotsBackground } from "./FallingDotsBackground"
+
+const reasons = [
+  {
+    title: "Brza i dostupna podrška",
+    description:
+      "Idealni smo za manja i srednja poduzeća jer nema dugih redova čekanja za izradu ili izmjene. Uvijek smo lako dostupni i odgovaramo brzo.",
+  },
+  {
+    title: "Moderni pristup",
+    description:
+      "Koristimo najmodernije tehnologije poput Astro i Next.js. Ne oslanjamo se na gotova rješenja poput WordPressa, već gradimo prilagođena rješenja.",
+  },
+  {
+    title: "Bez tehničkih briga",
+    description:
+      "Naši programeri će optimizirati vašu stranicu prema vašim specifičnim potrebama. Vi se fokusirate na poslovanje, a mi na tehniku.",
+  },
+  {
+    title: "Prilagodljivost za rast",
+    description:
+      "Zahvaljujući tehnologijama koje koristimo, vaša stranica će rasti zajedno s vašim poslovanjem – bez potrebe za potpunom rekonstrukcijom.",
+  },
+]
+---
+
+<section class="py-16 px-4 md:px-8 lg:px-20 bg-white">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+      Zašto odabrati <span class="text-blue-600">Web Life Support</span>?
+    </h2>
+    <div class="grid md:grid-cols-2 gap-8 text-left">
+      {
+        reasons.map((item) => (
+          <div class="p-6 bg-gray-50 rounded-2xl shadow-md hover:shadow-xl transition duration-300">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              {item.title}
+            </h3>
+            <p class="text-gray-600 leading-relaxed">{item.description}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Michroma";
+  src: url("/src/assets/fonts/Michroma-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Michroma", sans-serif;
+}
+
+@keyframes growBackgroundSize {
+  from {
+    background-size: 23px 23px;
+  }
+  to {
+    background-size: 50px 50px;
+  }
+}
+
+.hero-bg {
+  background-color: #e5e5f7;
+  background-image: radial-gradient(rgb(196, 171, 27) 1.15px, #02020a 1.15px);
+  background-size: 23px 23px;
+  animation: growBackgroundSize 30s linear infinite;
+}
