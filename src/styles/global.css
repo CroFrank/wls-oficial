@@ -12,7 +12,7 @@ body {
   font-family: "Michroma", sans-serif;
 }
 
-@keyframes growBackgroundSize {
+/* @keyframes growBackgroundSize {
   from {
     background-size: 23px 23px;
   }
@@ -26,4 +26,4 @@ body {
   background-image: radial-gradient(rgb(196, 171, 27) 1.15px, #02020a 1.15px);
   background-size: 23px 23px;
   animation: growBackgroundSize 30s linear infinite;
-}
+} */
