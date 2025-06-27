@@ -1,12 +1,12 @@
 import { motion } from "motion/react"
-import { FallingDotsBackground } from "./FallingDotsBackground"
+import { BackgroundAnimation } from "./BackgroundAnimation"
 
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 relative">
       {/* ⬇️ Background particles (z-index lower) */}
       <div className="absolute inset-0 -z-10">
-        <FallingDotsBackground color="#ff9900" bgColor="#000000" />
+        <BackgroundAnimation />
       </div>
       <div className="w-full max-w-5xl text-center">
         <div className="flex flex-col justify-center text-white px-6 tracking-wider min-h-screen">
@@ -28,7 +28,7 @@ export default function Hero() {
           </h1>
 
           <motion.div
-            className="bg-amber-300 h-1 mb-5"
+            className="bg-[#ff9900] h-1 mb-5"
             initial={{ width: 0 }}
             animate={{ width: "100%" }}
             transition={{ duration: 2.4, ease: "easeOut" }}

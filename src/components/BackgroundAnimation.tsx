@@ -11,15 +11,7 @@ import {
 import { loadSlim } from "@tsparticles/slim" // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
-interface FallingDotsBackgroundProps {
-  color?: string // particle color
-  bgColor?: string // fallback background color
-}
-
-export const FallingDotsBackground = ({
-  color = "#ff9900",
-  bgColor = "#000000",
-}: FallingDotsBackgroundProps) => {
+export const BackgroundAnimation = () => {
   const [init, setInit] = useState(false)
 
   // this should be run only once per application lifetime
@@ -45,7 +37,7 @@ export const FallingDotsBackground = ({
     () => ({
       background: {
         color: {
-          value: bgColor,
+          value: "#000000",
         },
       },
       fpsLimit: 120,
@@ -72,10 +64,10 @@ export const FallingDotsBackground = ({
       },
       particles: {
         color: {
-          value: color,
+          value: "#ff9900",
         },
         links: {
-          color: color,
+          color: "#ff9900",
           distance: 150,
           enable: true,
           opacity: 1,

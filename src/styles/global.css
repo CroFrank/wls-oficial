@@ -9,7 +9,12 @@
 }
 
 body {
-  font-family: "Michroma", sans-serif;
+  font-family: "Michroma", "Segoe UI", "Arial", sans-serif;
+  background-color: black;
+}
+
+.euro-symbol {
+  font-family: "Arial", sans-serif !important;
 }
 
 /* @keyframes growBackgroundSize {

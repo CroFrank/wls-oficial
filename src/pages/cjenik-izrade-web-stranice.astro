@@ -1,0 +1,94 @@
+---
+import { priceExamples } from "../data/reusable"
+import Layout from "../layouts/Layout.astro"
+import PageLayout from "../layouts/PageLayout.astro"
+---
+
+<Layout
+  title="Cjenik izrade i održavanja web stranica | WebLifeSupport"
+  description="Pogledajte primjere cijena izrade i održavanja web stranica. Transparentni troškovi, prilagođeni vašim potrebama. Nema skrivenih naknada | WebLifeSupport."
+>
+  <PageLayout title="Cjenik izrade web stranica">
+    <p class="mb-6">
+      Postoje <strong>tri vrste izdataka</strong> na koje možete računati pri izradi
+      web stranice:
+    </p>
+
+    <ol class="list-decimal pl-6 space-y-4 mb-8">
+      <li>
+        <strong>Cijena izrade web stranice</strong>
+        (od 250<span class="euro-symbol"> €</span>) – unaprijed dogovorena i
+        fiksna. Cijena se ne mijenja, osim ako naknadno zatražite dodatne
+        funkcionalnosti ili proširenje sadržaja.
+      </li>
+      <a
+        href="/usluge-izrade-web-stranice"
+        class="text-orange-500 underline hover:text-orange-400 mt-2 block"
+      >
+        ➤ Saznajte više o procesu izrade web stranice
+      </a>
+      <li>
+        <strong>Održavanje</strong> – može se plaćati mjesečno, kvartalno ili godišnje,
+        ovisno o iznosu.
+        <br />
+        <span class="block mt-2 text-sm text-gray-700">
+          Primjer: Ako održavanje iznosi 100<span class="euro-symbol"> €</span>,
+          naplaćuje se godišnje. Ako iznosi 600<span class="euro-symbol">
+            €</span
+          >, može se plaćati 50<span class="euro-symbol"> €</span> mjesečno.
+        </span>
+        <a
+          href="/usluge-izrade-web-stranice#održavanje"
+          class="text-orange-500 underline hover:text-orange-400 mt-2 block"
+        >
+          ➤ Saznajte što uključuje održavanje
+        </a>
+      </li>
+      <li>
+        <strong>Proširenje projekta nakon izrade</strong> – u slučaju dodataka nakon
+        završetka, nudimo <em>povlaštene cijene za nadogradnju</em> kako bismo dugoročno
+        održali vaše zadovoljstvo.
+      </li>
+    </ol>
+
+    <p class="mb-8">
+      <strong>Usluge trećih strana</strong> – poput hostinga, domene, CMS-a, mail
+      servisa, baza podataka – ne naplaćujemo dodatno, one su najčešće uvrštene u
+      cijenu održavanja, tako da vi nemate dodatne brige.
+    </p>
+
+    <h2 class="text-2xl font-semibold mb-4">
+      Primjeri cijena izrade web stranica
+    </h2>
+    <p class="mb-6">
+      Cijenu nije moguće univerzalno fiksirati jer ovisi o brojnim faktorima:
+      <br />
+      <span class="text-sm text-gray-600">
+        broj stranica, obujam teksta i slika, baze podataka, cloud servisi,
+        treće strane, kompleksnost funkcionalnosti...
+      </span>
+    </p>
+
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        priceExamples.map((offer) => (
+          <div class="p-6 rounded-lg shadow-md bg-amber-600">
+            <h3 class="text-xl font-bold mb-2">{offer.title}</h3>
+            <p class="text-sm mb-2">{offer.description}</p>
+            <p class="text-lg text-white euro">{offer.price}</p>
+            <a href={offer.link}>Pogledaj primjer</a>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="mt-12 text-sm text-gray-600">
+      <p>
+        Pratite naše društvene mreže i web stranicu – redovito objavljujemo
+        <strong class="text-orange-500 font-medium"
+          >popuste, akcije i besplatne izrade</strong
+        > stranica za određene kategorije korisnika.
+      </p>
+    </div>
+  </PageLayout>
+</Layout>

@@ -1,0 +1,21 @@
+---
+import { BackgroundAnimation } from "../components/BackgroundAnimation"
+
+const { title } = Astro.props
+---
+
+<section class="py-20 w-full bg-gray-100 text-gray-950">
+  <div class="absolute inset-0 -z-10">
+    <BackgroundAnimation client:load />
+  </div>
+  <div class="container mx-auto px-6 sm:px-8 md:px-12 lg:px-16 py-20">
+    {
+      title && (
+        <h1 class="text-3xl sm:text-4xl font-bold mb-12 text-center text-black">
+          {title}
+        </h1>
+      )
+    }
+    <slot />
+  </div>
+</section>
