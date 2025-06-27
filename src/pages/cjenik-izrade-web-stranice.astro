@@ -1,7 +1,7 @@
 ---
-import { priceExamples } from "../data/reusable"
 import Layout from "../layouts/Layout.astro"
 import PageLayout from "../layouts/PageLayout.astro"
+import ExampleCard from "../components/ExampleCard.tsx"
 ---
 
 <Layout
@@ -46,15 +46,15 @@ import PageLayout from "../layouts/PageLayout.astro"
       </li>
       <li>
         <strong>Proširenje projekta nakon izrade</strong> – u slučaju dodataka nakon
-        završetka, nudimo <em>povlaštene cijene za nadogradnju</em> kako bismo dugoročno
-        održali vaše zadovoljstvo.
+        završetka, nudimo povlaštene cijene za nadogradnju kako bismo dugoročno održali
+        vaše zadovoljstvo.
       </li>
     </ol>
 
     <p class="mb-8">
       <strong>Usluge trećih strana</strong> – poput hostinga, domene, CMS-a, mail
-      servisa, baza podataka – ne naplaćujemo dodatno, one su najčešće uvrštene u
-      cijenu održavanja, tako da vi nemate dodatne brige.
+      servisa, baza podataka – ne naplaćujemo dodatno, one su uvrštene u cijenu održavanja,
+      tako da vi nemate dodatne brige.
     </p>
 
     <h2 class="text-2xl font-semibold mb-4">
@@ -63,23 +63,34 @@ import PageLayout from "../layouts/PageLayout.astro"
     <p class="mb-6">
       Cijenu nije moguće univerzalno fiksirati jer ovisi o brojnim faktorima:
       <br />
-      <span class="text-sm text-gray-600">
+      <span class="text-sm text-gray-700">
         broj stranica, obujam teksta i slika, baze podataka, cloud servisi,
         treće strane, kompleksnost funkcionalnosti...
       </span>
     </p>
 
     <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-      {
-        priceExamples.map((offer) => (
-          <div class="p-6 rounded-lg shadow-md bg-amber-600">
-            <h3 class="text-xl font-bold mb-2">{offer.title}</h3>
-            <p class="text-sm mb-2">{offer.description}</p>
-            <p class="text-lg text-white euro">{offer.price}</p>
-            <a href={offer.link}>Pogledaj primjer</a>
-          </div>
-        ))
-      }
+      <ExampleCard
+        title="Osnovna prezentacijska stranica"
+        description="1 - 3 stranice, moderan dizajn, osnovne informacije"
+        link="https://start-web-nine.vercel.app/"
+        price="250"
+        client:load
+      />
+      <ExampleCard
+        title="Jednostavna poslovna web stranica"
+        description="više podstranica, dizajn s više detalja, kontakt forma kroz koju se mogu slati i slike"
+        link="https://www.wonderink.hr/"
+        price="450"
+        client:load
+      />
+      <ExampleCard
+        title="Napredna stranica s integracijama"
+        description="Login/Logout funkcionalnosti, baze podataka, vanjski API servisi, ai integracija"
+        price="1450"
+        link="https://www.uzimam.com/"
+        client:load
+      />
     </div>
 
     <div class="mt-12 text-sm text-gray-600">

@@ -2,7 +2,7 @@ export const navLinks = [
   { label: "Naslovnica", href: "/" },
   { label: "Cjenik", href: "/cjenik-izrade-web-stranice" },
   { label: "Usluge", href: "/usluge-izrade-web-stranice" },
-  { label: "Kontakt", href: "#kontakt" },
+  { label: "Kontakt", href: "/kontakt-weblifesupport" },
 ]
 
 export const whyUs = [
@@ -57,28 +57,5 @@ export const weOffer = [
   {
     title: "Prilagodba mobilnim uređajima",
     description: "Responsive dizajn koji izgleda savršeno na svakom zaslonu.",
-  },
-]
-
-export const priceExamples = [
-  {
-    title: "Osnovna prezentacijska stranica",
-    description: "1 - 3 stranice, moderan dizajn, osnovne informacije",
-    price: "250€/jednokratno + 80€/godišnje održavanje",
-    link: "",
-  },
-  {
-    title: "Višestranična web stranica",
-    description:
-      "više podstranica, dizajn s više detalja, kontakt forma kroz koju se mogu slati i slike",
-    price: "450€/jednokratno + 150€/godišnje održavanje",
-    link: "",
-  },
-  {
-    title: "Napredna stranica s integracijama",
-    description:
-      "Login/Logout funkcionalnosti, baze podataka, vanjski API servisi, ai integracija",
-    price: "1450€/jednokratno + 360€/godišnje održavanje",
-    link: "",
   },
 ]
