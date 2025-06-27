@@ -1,0 +1,37 @@
+---
+import ContactForm from "../components/ContactForm"
+import Layout from "../layouts/Layout.astro"
+import PageLayout from "../layouts/PageLayout.astro"
+---
+
+<Layout
+  title="Kontaktirajte nas – WebLifeSupport"
+  description="Trebate modernu i pouzdanu web stranicu? Kontaktirajte nas za izradu, održavanje ili nadogradnju vaše web stranice. Brz odgovor i stručna podrška – WebLifeSupport."
+>
+  <PageLayout title="Kontakt">
+    <div class="max-w-2xl mx-auto text-base leading-relaxed">
+      <p class="mb-6">
+        Javite nam se putem kontakt obrasca ili direktno e-mailom. Odgovaramo u
+        roku od 24 sata.
+      </p>
+
+      <div class="space-y-4 mb-12">
+        <p>
+          <strong>Email:</strong>
+          <a
+            href="mailto:info@weblifesupport.hr"
+            class="text-blue-600 hover:underline">info@weblifesupport.com</a
+          >
+        </p>
+        <p>
+          <strong>Telefon:</strong>
+          <a href="tel:+385976785381" class="text-blue-600 hover:underline"
+            >+385 97 678 5381</a
+          >
+        </p>
+        <p><strong>Radno vrijeme:</strong> pon – sub, 8:00 – 21:00</p>
+      </div>
+      <ContactForm client:load />
+    </div>
+  </PageLayout>
+</Layout>

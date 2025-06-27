@@ -29,9 +29,12 @@ export default function Navbar() {
               {link.label}
             </HoverLink>
           ))}
-          <button className="bg-amber-300 text-black px-4 py-2 rounded hover:bg-amber-400 transition uppercase">
+          <a
+            className="bg-amber-300 text-black px-4 py-2 rounded hover:bg-amber-400 transition uppercase"
+            href="/upitnik"
+          >
             Upitnik
-          </button>
+          </a>
         </div>
       </div>
 
@@ -46,9 +49,12 @@ export default function Navbar() {
               </HoverLink>
             </div>
           ))}
-          <button className="bg-amber-300 text-black px-4 py-2 rounded hover:bg-amber-400 transition uppercase w-full max-w-2xl">
+          <a
+            className="bg-amber-300 text-black px-4 py-2 rounded hover:bg-amber-400 transition uppercase"
+            href="/upitnik"
+          >
             Upitnik
-          </button>
+          </a>
         </div>
       )}
     </nav>
