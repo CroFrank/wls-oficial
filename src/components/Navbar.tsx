@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-black/80 backdrop-blur-md z-50 text-gray-100">
-      <div className="max-w-[1560px] mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="max-w-[1560px] mx-auto px-4 md:px-6 lg:px-10 py-4 flex items-center justify-between">
         {/* Logo */}
         <a href="/">
           <img src="logo.svg" width="100" height="100" />
@@ -23,7 +23,7 @@ export default function Navbar() {
         </button>
 
         {/* Links (desktop) */}
-        <div className="hidden lg:flex items-center gap-6  font-medium">
+        <div className="hidden lg:flex items-center gap-6 font-medium">
           {navLinks.map((link) => (
             <HoverLink key={link.href} href={link.href}>
               {link.label}
