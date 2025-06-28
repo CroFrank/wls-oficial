@@ -3,7 +3,7 @@ import { Toaster } from "@/components/components/ui/sonner"
 import Footer from "../components/Footer.astro"
 import Navbar from "../components/Navbar"
 import "../styles/global.css"
-const { title, description } = Astro.props
+const { title, description, robots } = Astro.props
 ---
 
 <!doctype html>
@@ -24,6 +24,7 @@ const { title, description } = Astro.props
       content={description ||
         "Gradimo moderne, brze i pouzdane web stranice koje rastu zajedno s vašim poslovanjem. Najmodernije tehnologije i stručna podrška | WebLifeSupport."}
     />
+    {robots && <meta name="robots" content={robots} />}
   </head>
   <body>
     <Navbar client:load />

@@ -54,7 +54,7 @@ export default function Hero() {
           {/* Animated Corner Cards - Hidden on small screens */}
           <CornerCard text="lighning-fast" />
           <CornerCard text="SEO-frienldy" />
-          <CornerCard text="Unique-designe" />
+          <CornerCard text="Unique-design" />
         </div>
       </div>
     </section>

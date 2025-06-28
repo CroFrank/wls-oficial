@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout
+  title="Stranica nije pronađena – WebLifeSupport"
+  description="Stranica koju tražite ne postoji. Vratite se na naslovnicu."
+  robots="noindex"
+>
+  <section
+    class="min-h-screen flex flex-col items-center justify-center text-center px-4"
+  >
+    <h1 class="text-5xl font-bold text-gray-200 mb-4">ERROR 404</h1>
+    <p class="text-lg text-gray-600 mb-6">
+      Ups! Stranica koju tražite ne postoji.
+    </p>
+    <a
+      href="/"
+      class="text-white px-6 py-3 rounded-md text-sm font-medium underline transition hover:text-amber-400"
+    >
+      Povratak na naslovnicu
+    </a>
+  </section>
+</Layout>

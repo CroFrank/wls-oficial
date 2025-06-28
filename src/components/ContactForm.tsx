@@ -15,8 +15,6 @@ export default function ContactForm() {
     }
 
     const formData = new FormData(formRef.current)
-    // const formDataObject = Object.fromEntries(rawFormData.entries())
-    // const json = JSON.stringify(formDataObject)
 
     try {
       const response = await fetch("https://formcarry.com/s/3M4R-kvIRLr", {

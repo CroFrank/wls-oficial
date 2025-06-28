@@ -1,4 +1,5 @@
 ---
+import UpitnikForm from "@/components/UpitnikForm"
 import Layout from "../layouts/Layout.astro"
 import PageLayout from "../layouts/PageLayout.astro"
 ---
@@ -8,11 +9,14 @@ import PageLayout from "../layouts/PageLayout.astro"
   description="Ispunite upitnik kako bismo mogli precizno procijeniti vaše potrebe za web stranicu. Brza i kvalitetna izrada, podrška i dizajn po mjeri."
 >
   <PageLayout title="Upitnik za izradu web stranice">
-    <div class="max-w-3xl mx-auto text-base leading-relaxed space-y-6">
+    <div class="mx-auto text-base leading-relaxed space-y-6">
+      <p>Nije potrebno popuniti sva polja, popunite ono što znate.</p>
       <p>
-        Ispunite ovaj kratki upitnik kako bismo vam mogli pripremiti točnu
-        ponudu i prijedlog rješenja. Odgovaramo u roku 24 sata.
+        Možete započeti sa jednostavnijim projektom i po potrebi dodavati
+        funkcionalnosti. Neka vaša web stranica raste zajedno s vašim
+        poslovanjem.
       </p>
+      <UpitnikForm client:load />
     </div>
   </PageLayout>
 </Layout>
