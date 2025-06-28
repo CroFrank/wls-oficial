@@ -11,7 +11,6 @@ const { title, description, robots } = Astro.props
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>
       {
@@ -25,6 +24,16 @@ const { title, description, robots } = Astro.props
         "Gradimo moderne, brze i pouzdane web stranice koje rastu zajedno s vašim poslovanjem. Najmodernije tehnologije i stručna podrška | WebLifeSupport."}
     />
     {robots && <meta name="robots" content={robots} />}
+    <link rel="icon" href="/favicon32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="/favicon16.png" sizes="16x16" type="image/png" />
+    <link rel="apple-touch-icon" href="/favicon180.png" sizes="180x180" />
+    <link
+      rel="icon"
+      href="/favicon128.ico"
+      sizes="128x128"
+      type="image/x-icon"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body>
     <Navbar client:load />
