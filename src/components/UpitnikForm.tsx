@@ -82,8 +82,8 @@ export default function UpitnikForm() {
   return (
     <form onSubmit={sendFormData} className="space-y-8">
       {/* OSNOVNE INFORMACIJE */}
-      <div>
-        <h2 className="mb-2 text-xl font-semibold">Osnovne informacije</h2>
+      <div className="space-y-4 mb-10">
+        <h2 className="mb-6 text-xl font-semibold">Osnovne informacije</h2>
 
         <label className="mb-2 block">
           Koja je osnovna svrha web stranice?
@@ -170,7 +170,7 @@ export default function UpitnikForm() {
 
       {/* DIZAJN */}
 
-      <div>
+      <div className="space-y-4 mb-10">
         <h2 className="mb-2 text-xl font-semibold">Dizajn</h2>
 
         <label className="mb-2 mt-4 block">Imate li gotov dizajn?</label>
@@ -202,7 +202,7 @@ export default function UpitnikForm() {
       </div>
 
       {/* CMS I SADRŽAJ */}
-      <div>
+      <div className="space-y-4 mb-10">
         <h2 className="mb-2 text-xl font-semibold">
           Upravljanje sadržajem (CMS)
         </h2>
@@ -239,7 +239,7 @@ export default function UpitnikForm() {
       </div>
 
       {/* WEBSHOP */}
-      <div>
+      <div className="space-y-4 mb-10">
         <h2 className="mb-2 text-xl font-semibold">Webshop funkcionalnosti</h2>
 
         <label className="mb-2 block">Želite li webshop?</label>
@@ -304,7 +304,7 @@ export default function UpitnikForm() {
       </div>
 
       {/* OSTALO */}
-      <div>
+      <div className="space-y-4 mb-10">
         <h2 className="mb-2 text-xl font-semibold">Ostalo</h2>
 
         <label className="mb-2 mt-4 block">Imate li što za nadodati?</label>
@@ -319,7 +319,7 @@ export default function UpitnikForm() {
       </div>
 
       {/* ZAVRŠNA PITANJA */}
-      <div>
+      <div className="space-y-4 mb-10">
         <h2 className="mb-2 text-xl font-semibold">Završna pitanja</h2>
 
         <label className="mb-2 block">
