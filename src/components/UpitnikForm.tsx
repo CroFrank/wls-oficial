@@ -2,6 +2,8 @@ import { useState } from "react"
 import { toast } from "sonner"
 
 type FormState = {
+  ime: string
+  email: string
   svrhaStranice: string
   hasWebsite: string
   websiteDomain: string
@@ -22,6 +24,8 @@ type FormState = {
 }
 
 const initialFormState: FormState = {
+  ime: "",
+  email: "",
   svrhaStranice: "",
   hasWebsite: "-",
   websiteDomain: "",
@@ -81,6 +85,31 @@ export default function UpitnikForm() {
   }
   return (
     <form onSubmit={sendFormData} className="space-y-8">
+      {/* O KLIJNETU */}
+
+      <div className="space-y-4 mb-10">
+        <h2 className="mb-2 text-xl font-semibold">O vama</h2>
+
+        <label className="mb-2 mt-4 block">Ime</label>
+        <input
+          name="ime"
+          value={form.ime}
+          onChange={handleChange}
+          type="text"
+          className="w-full rounded border p-2"
+          required
+        />
+        <label className="mb-2 mt-4 block">Vaš email</label>
+        <input
+          name="email"
+          value={form.email}
+          onChange={handleChange}
+          type="email"
+          className="w-full rounded border p-2"
+          required
+        />
+      </div>
+
       {/* OSNOVNE INFORMACIJE */}
       <div className="space-y-4 mb-10">
         <h2 className="mb-6 text-xl font-semibold">Osnovne informacije</h2>
@@ -95,7 +124,6 @@ export default function UpitnikForm() {
           type="text"
           className="w-full rounded border p-2"
           placeholder="npr. Informativna, portfolio, blog, webshop..."
-          required
         />
 
         <label className="mb-2 mt-4 block">
@@ -356,6 +384,23 @@ export default function UpitnikForm() {
           placeholder="npr. u roku 2 tjedna, 2 mjeseca..."
         />
       </div>
+
+      {/* <div className="flex items-start gap-2 mb-10">
+        <input
+          type="checkbox"
+          id="privacy"
+          name="privacy"
+          className="mt-1 h-5 w-5"
+          required
+        />
+        <label htmlFor="privacy" className="text-sm">
+          Prihvaćam{" "}
+          <a href="/pravila-privatnosti" className="text-blue-600 underline">
+            pravila privatnosti
+          </a>
+          .
+        </label>
+      </div> */}
 
       {/* SUBMIT */}
       <div className="text-center">
