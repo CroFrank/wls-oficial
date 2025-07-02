@@ -2,9 +2,8 @@
 import { Toaster } from "@/components/components/ui/sonner"
 import Footer from "../components/Footer.astro"
 import Navbar from "../components/Navbar"
-import { Analytics } from "@vercel/analytics/next"
-
 import "../styles/global.css"
+import Analytics from "@vercel/analytics/astro"
 const { title, description, robots } = Astro.props
 ---
 
@@ -44,13 +43,13 @@ const { title, description, robots } = Astro.props
     <Toaster client:load />
     <Analytics />
   </body>
-</html>
 
-<style>
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-</style>
+  <style>
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</html>
