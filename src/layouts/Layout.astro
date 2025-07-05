@@ -4,7 +4,25 @@ import Footer from "../components/Footer.astro"
 import Navbar from "../components/Navbar"
 import "../styles/global.css"
 import Analytics from "@vercel/analytics/astro"
-const { title, description, robots } = Astro.props
+import { BackgroundAnimation } from "@/components/BackgroundAnimation"
+interface Props {
+  metaTitle: string
+  metaDescription: string
+  robots?: string
+  ogTitle?: string
+  ogDescription?: string
+  ogImage?: string
+  ogType?: string
+}
+const {
+  metaTitle,
+  metaDescription,
+  robots,
+  ogTitle,
+  ogDescription,
+  ogImage,
+  ogType,
+} = Astro.props as Props
 ---
 
 <!doctype html>
@@ -15,16 +33,18 @@ const { title, description, robots } = Astro.props
     <meta name="generator" content={Astro.generator} />
     <title>
       {
-        title ||
+        metaTitle ||
           "Izrada web stranica koje prate vaš poslovni rast | WebLifeSupport"
       }
     </title>
     <meta
       name="description"
-      content={description ||
+      content={metaDescription ||
         "Gradimo moderne, brze i pouzdane web stranice koje rastu zajedno s vašim poslovanjem. Najmodernije tehnologije i stručna podrška | WebLifeSupport."}
     />
     {robots && <meta name="robots" content={robots} />}
+
+    <!-- Favicons -->
     <link rel="icon" href="/favicon32.png" sizes="32x32" type="image/png" />
     <link rel="icon" href="/favicon16.png" sizes="16x16" type="image/png" />
     <link rel="apple-touch-icon" href="/favicon180.png" sizes="180x180" />
@@ -35,8 +55,20 @@ const { title, description, robots } = Astro.props
       type="image/x-icon"
     />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph meta tagovi -->
+    <meta property="og:title" content={ogTitle || metaTitle} />
+    <meta
+      property="og:description"
+      content={ogDescription || metaDescription}
+    />
+    <meta property="og:image" content={ogImage || "/default-og-image.png"} />
+    <meta property="og:type" content={ogType || "website"} />
   </head>
   <body>
+    <div class="absolute inset-0 -z-10">
+      <BackgroundAnimation client:load />
+    </div>
     <Navbar client:load />
     <slot />
     <Footer />

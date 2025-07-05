@@ -20,22 +20,6 @@ body {
   font-family: "Arial", sans-serif !important;
 }
 
-/* @keyframes growBackgroundSize {
-  from {
-    background-size: 23px 23px;
-  }
-  to {
-    background-size: 50px 50px;
-  }
-}
-
-.hero-bg {
-  background-color: #e5e5f7;
-  background-image: radial-gradient(rgb(196, 171, 27) 1.15px, #02020a 1.15px);
-  background-size: 23px 23px;
-  animation: growBackgroundSize 30s linear infinite;
-} */
-
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

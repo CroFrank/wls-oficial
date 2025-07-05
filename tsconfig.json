@@ -9,6 +9,8 @@
     "paths": {
       "@/components/*": ["src/components/*"], // 👈 omogućuje aliase
       "@/lib/*": ["src/lib/*"]
-    }
+    },
+    "strictNullChecks": true,
+    "allowJs": true
   }
 }

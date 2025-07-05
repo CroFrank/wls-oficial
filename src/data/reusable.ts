@@ -2,6 +2,7 @@ export const navLinks = [
   { label: "Naslovnica", href: "/" },
   { label: "Cjenik", href: "/cjenik-izrade-web-stranice" },
   { label: "Usluge", href: "/usluge-izrade-web-stranice" },
+  { label: "Blog", href: "/blog-weblifesupport" },
   { label: "Kontakt", href: "/kontakt-weblifesupport" },
 ]
 

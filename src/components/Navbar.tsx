@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="max-w-[1560px] mx-auto px-4 md:px-6 lg:px-10 py-4 flex items-center justify-between">
         {/* Logo */}
         <a href="/">
-          <img src="logo.svg" width="100" height="100" />
+          <img src="/logo.svg" width="100" height="100" />
         </a>
         {/* Hamburger */}
         <button

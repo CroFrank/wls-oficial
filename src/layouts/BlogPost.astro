@@ -1,0 +1,43 @@
+---
+import "../styles/blogStyle.css"
+const { entry } = Astro.props
+---
+
+<div
+  class="blog-post-font flex flex-col lg:flex-row gap-6 py-40 bg-gray-100 min-h-screen px-4 md:px-8 lg:px-12 xl:px-16 w-full"
+>
+  <!-- Glavni blog post -->
+  <main class="lg:w-3/4 w-full p-6 rounded-lg shadow-md mb-10 lg:mb-0">
+    <h1 class="text-2xl 2xl:text-4xl font-bold text-center mb-10">
+      {entry.data.title}
+    </h1>
+    <img
+      src={entry.data.image?.src}
+      alt={entry.data.image?.alt || "Blog post image"}
+      class="md:h-[500px] w-full md:object-cover object-contain max-w-5xl mx-auto"
+    />
+
+    <div class="w-full overflow-x-hidden break-words">
+      <slot />
+    </div>
+
+    <p class="text-base text-gray-800 mt-10 animate-pulse">
+      Ako želite besplatno savjetovanje o idealnom izboru tehnologija za vašu
+      web stranicu,&nbsp;
+      <a
+        href="/kontakt-weblifesupport"
+        class="text-blue-600 underline hover:text-blue-500"
+      >
+        obratite nam se putem kontakt stranice.
+      </a>
+    </p>
+  </main>
+  <!-- Sidebar s povezanim postovima -->
+  <aside class="lg:w-1/4 w-full space-y-4">
+    <h3 class="text-xl font-semibold border-b pb-2">Povezani blogovi</h3>
+
+    <div class="bg-gray-100 p-4 rounded-lg shadow-sm w-full">
+      <p class="text-sm text-gray-600 mt-1">Trenutno nema drugih objava</p>
+    </div>
+  </aside>
+</div>
