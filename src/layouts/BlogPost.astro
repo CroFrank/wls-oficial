@@ -14,23 +14,12 @@ const { entry } = Astro.props
     <img
       src={entry.data.image?.src}
       alt={entry.data.image?.alt || "Blog post image"}
-      class="md:h-[500px] w-full md:object-cover object-contain max-w-5xl mx-auto"
+      class="md:h-[500px] w-full md:object-contain object-contain max-w-5xl mx-auto"
     />
 
     <div class="w-full overflow-x-hidden break-words">
       <slot />
     </div>
-
-    <p class="text-base text-gray-800 mt-10 animate-pulse">
-      Ako želite besplatno savjetovanje o idealnom izboru tehnologija za vašu
-      web stranicu,&nbsp;
-      <a
-        href="/kontakt-weblifesupport"
-        class="text-blue-600 underline hover:text-blue-500"
-      >
-        obratite nam se putem kontakt stranice.
-      </a>
-    </p>
   </main>
   <!-- Sidebar s povezanim postovima -->
   <aside class="lg:w-1/4 w-full space-y-4">
