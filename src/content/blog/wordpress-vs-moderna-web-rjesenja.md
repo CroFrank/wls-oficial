@@ -6,13 +6,13 @@ description: Otkrivamo razlike između WordPressa i modernih frameworka (Astro, 
 pubDate: 01-07-2025
 image:
   {
-    src: /wp-vs-jamstack.webp,
+    src: /blog/wp-vs-jamstack.webp,
     alt: WordPress protiv Astro i Next.js rješenja za web izradu,
   }
 tags: ["astro", "nextjs", "web tehnologije", "izrada web stranica"]
 ogTitle: WordPress ili moderna rješenja | WebLifeSupport
 ogDescription: Usporedba WordPressa s modernim frameworkovima poput Astro i Next.js.
-ogImage: /wp-vs-jamstack.png
+ogImage: /blog/wp-vs-jamstack.png
 ogType: article
 ---
 
