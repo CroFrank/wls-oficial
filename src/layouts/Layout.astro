@@ -65,13 +65,20 @@ const {
     <meta property="og:image" content={ogImage || "/default-og-image.png"} />
     <meta property="og:type" content={ogType || "website"} />
   </head>
-  <body>
+  <body class="flex flex-col min-h-screen">
     <div class="absolute inset-0 -z-10">
       <BackgroundAnimation client:load />
     </div>
+
     <Navbar client:load />
-    <slot />
+
+    <!-- Main content that grows to fill available space -->
+    <main class="flex-grow">
+      <slot />
+    </main>
+
     <Footer />
+
     <Toaster client:load />
     <Analytics />
   </body>

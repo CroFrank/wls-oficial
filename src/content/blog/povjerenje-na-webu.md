@@ -3,7 +3,7 @@ metaTitle: Zašto ljudi ne vjeruju vašoj web stranici? | WebLifeSupport
 metaDescription: Saznajte najčešće razloge zbog kojih posjetitelji ne vjeruju vašoj web stranici – i kako to možete popraviti.
 title: Zašto ljudi ne vjeruju vašoj web stranici (i kako to popraviti)?
 description: Otkrivamo ključne razloge zbog kojih korisnici brzo napuštaju web stranice – i što možete učiniti da povećate povjerenje i konverzije.
-pubDate: 06-07-2025
+pubDate: 07.06.2025
 image:
   {
     src: /blog/povjerenje-na-webu.webp,

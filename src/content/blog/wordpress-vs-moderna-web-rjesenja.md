@@ -3,7 +3,7 @@ metaTitle: WordPress ili Moderna Web Rješenja | WebLifeSupport
 metaDescription: Otkrivamo razlike između WordPressa i modernih frameworka (Astro, Next.js) za profesionalnu izradu web stranica.
 title: Usporedba - WordPress ili moderna rješenja poput Astro i Next.js?
 description: Otkrivamo razlike između WordPressa i modernih frameworka (Astro, Next.js) i zašto je to bitno za vaše poslovanje.
-pubDate: 01-07-2025
+pubDate: 07-01-2025
 image:
   {
     src: /blog/wp-vs-jamstack.webp,

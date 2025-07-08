@@ -1,4 +1,4 @@
-import { useEffect, useRef, type JSXElementConstructor } from "react"
+import { useEffect, useRef } from "react"
 import { animate, inView } from "motion"
 
 type ServiceCardProps = {

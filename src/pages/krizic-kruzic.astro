@@ -1,0 +1,17 @@
+---
+import Layout from "src/layouts/Layout.astro"
+import TicTacToe from "../components/TikTakToe.tsx"
+import PageLayout from "src/layouts/PageLayout.astro"
+---
+
+<Layout
+  metaTitle="Zaigraj križić-kružić protiv AI – interaktivna web igra | WebLifeSupport"
+  metaDescription="Isprobaj zabavnu web igru križić-kružić protiv umjetne inteligencije. Pokazujemo što sve vaša buduća web stranica može imati – od dizajna do interaktivnosti."
+>
+  <section class="pt-40 pb-20 text-white">
+    <h1 class="text-3xl sm:text-4xl font-bold mb-12 text-center text-white">
+      Igraj križić-kružić protiv AI-a
+    </h1>
+    <TicTacToe client:load />
+  </section>
+</Layout>
