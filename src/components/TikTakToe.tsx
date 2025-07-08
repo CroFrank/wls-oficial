@@ -22,7 +22,7 @@ const lines: number[][] = [
 
 export default function TicTacToe() {
   const [board, setBoard] = useState<Board>(initialBoard)
-  const [isPlayerTurn, setIsPlayerTurn] = useState<boolean>(false)
+  const [isPlayerTurn, setIsPlayerTurn] = useState<boolean>(true)
   const [gameCount, setGameCount] = useState<number>(1)
   const [gameOver, setGameOver] = useState<boolean>(false)
   const [winner, setWinner] = useState<Winner>(null)
@@ -99,7 +99,7 @@ export default function TicTacToe() {
     setBoard(initialBoard)
     setGameOver(false)
     setWinner(null)
-    const aiStarts = nextGame % 2 === 1
+    const aiStarts = nextGame % 2 === 0
     setIsPlayerTurn(!aiStarts)
     if (aiStarts) {
       setTimeout(() => aiMove(), 500)
