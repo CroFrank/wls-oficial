@@ -54,7 +54,7 @@ export const BackgroundAnimation = () => {
         },
         modes: {
           push: {
-            quantity: 8,
+            quantity: 4,
           },
           repulse: {
             distance: 200,
