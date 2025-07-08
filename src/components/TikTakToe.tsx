@@ -26,7 +26,6 @@ export default function TicTacToe() {
   const [gameCount, setGameCount] = useState<number>(0)
   const [gameOver, setGameOver] = useState<boolean>(false)
   const [winner, setWinner] = useState<Winner>(null)
-  const [factIndex, setFactIndex] = useState<number>(0)
 
   function getRandomItem<T>(array: T[]): T {
     const randomIndex = Math.floor(Math.random() * array.length)
@@ -100,8 +99,7 @@ export default function TicTacToe() {
     setBoard(initialBoard)
     setGameOver(false)
     setWinner(null)
-    // setFactIndex((prev) => (prev + 1) % facts.length)
-    const aiStarts = nextGame % 2 === 0
+    const aiStarts = nextGame % 2 === 1
     setIsPlayerTurn(!aiStarts)
     if (aiStarts) {
       setTimeout(() => aiMove(), 500)
