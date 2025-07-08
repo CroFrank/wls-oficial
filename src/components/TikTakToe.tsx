@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect } from "react"
 import { facts } from "src/data/reusable"
 import { motion } from "motion/react"
 
@@ -26,7 +26,6 @@ export default function TicTacToe() {
   const [gameCount, setGameCount] = useState<number>(1)
   const [gameOver, setGameOver] = useState<boolean>(false)
   const [winner, setWinner] = useState<Winner>(null)
-  const isResetting = useRef(false)
 
   function getRandomItem<T>(array: T[]): T {
     const randomIndex = Math.floor(Math.random() * array.length)
@@ -85,13 +84,6 @@ export default function TicTacToe() {
   }
 
   useEffect(() => {
-    if (isResetting.current) {
-      isResetting.current = false
-      if (!isPlayerTurn) {
-        setTimeout(() => aiMove(), 500)
-      }
-      return // Skip the logic below
-    }
     const result = checkWinner(board)
     if (result) {
       setGameOver(true)
@@ -101,21 +93,20 @@ export default function TicTacToe() {
     }
     console.log("board useeefect")
     console.log(board)
-    console.log("gameOver useeefect")
-    console.log(gameOver)
   }, [board, isPlayerTurn])
 
   const resetGame = () => {
-    isResetting.current = true
     const nextGame = gameCount + 1
     setGameCount(gameCount + 1)
     setBoard(initialBoard)
-    setGameOver(false)
+
     setWinner(null)
     const aiStarts = nextGame % 2 === 0
     setIsPlayerTurn(!aiStarts)
     if (aiStarts) {
       setTimeout(() => aiMove(), 500)
+      setTimeout(() => setBoard(initialBoard), 501)
+      setTimeout(() => setGameOver(false), 501)
     }
   }
   const renderCell = (i: number) => {
