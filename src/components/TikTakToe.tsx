@@ -99,7 +99,7 @@ export default function TicTacToe() {
     const nextGame = gameCount + 1
     setGameCount(gameCount + 1)
     setBoard(initialBoard)
-
+    setGameOver(false)
     setWinner(null)
     const aiStarts = nextGame % 2 === 0
     setIsPlayerTurn(!aiStarts)
