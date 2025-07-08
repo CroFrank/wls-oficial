@@ -28,6 +28,11 @@ export default function TicTacToe() {
   const [winner, setWinner] = useState<Winner>(null)
   const [factIndex, setFactIndex] = useState<number>(0)
 
+  function getRandomItem<T>(array: T[]): T {
+    const randomIndex = Math.floor(Math.random() * array.length)
+    return array[randomIndex]
+  }
+
   const checkWinner = (b: Board): Winner => {
     for (let [a, b1, c] of lines) {
       if (b[a] && b[a] === b[b1] && b[a] === b[c]) return b[a]
@@ -95,7 +100,7 @@ export default function TicTacToe() {
     setBoard(initialBoard)
     setGameOver(false)
     setWinner(null)
-    setFactIndex((prev) => (prev + 1) % facts.length)
+    // setFactIndex((prev) => (prev + 1) % facts.length)
     const aiStarts = nextGame % 2 === 0
     setIsPlayerTurn(!aiStarts)
     if (aiStarts) {
@@ -157,7 +162,7 @@ export default function TicTacToe() {
       {gameOver && (
         <div className="mt-4 text-center space-y-2">
           <p className="font-medium">Zanimljivost:</p>
-          <p className="italic">{facts[factIndex]}</p>
+          <p className="italic">{getRandomItem(facts)}</p>
           <button
             className="mt-2 px-4 py-2 bg-amber-400 text-black rounded-xl shadow hover:bg-amber-300"
             onClick={resetGame}
