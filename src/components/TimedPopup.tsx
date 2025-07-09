@@ -22,6 +22,7 @@ export default function TimedPopup() {
           <p className="text-2xl font-bold text-red-900"></p>
           <a
             href="/krizic-kruzic"
+            onClick={() => setOpen(false)}
             className="inline-block px-6 py-3 bg-white text-bllack font-semibold rounded-md shadow hover:bg-gray-100 transition uppercase"
           >
             Zaigraj
