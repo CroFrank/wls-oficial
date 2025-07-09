@@ -1,5 +1,6 @@
 import { motion } from "motion/react"
 import { BackgroundAnimation } from "./BackgroundAnimation"
+import TimedPopup from "./TimedPopup"
 
 export default function Hero() {
   return (

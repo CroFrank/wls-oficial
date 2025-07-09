@@ -3,12 +3,14 @@ import Layout from "../layouts/Layout.astro"
 import Hero from "../components/Hero.tsx"
 import WhatWeOffer from "../components/WhatWeOffer.astro"
 import WhyWls from "../components/WhyWls.astro"
+import TimedPopup from "@/components/TimedPopup"
 ---
 
 <Layout
   metaTitle="Izrada web stranica koje prate vaš poslovni rast | WebLifeSupport"
   metaDescription="Gradimo moderne, brze i pouzdane web stranice koje rastu zajedno s vašim poslovanjem. Najmodernije tehnologije i stručna podrška | WebLifeSupport."
 >
+  <TimedPopup client:load />
   <Hero client:load />
   <WhatWeOffer />
   <WhyWls />
