@@ -1,6 +1,5 @@
 import { motion } from "motion/react"
 import { BackgroundAnimation } from "./BackgroundAnimation"
-import TimedPopup from "./TimedPopup"
 
 export default function Hero() {
   return (
@@ -35,22 +34,22 @@ export default function Hero() {
             transition={{ duration: 2.4, ease: "easeOut" }}
           />
 
-          <motion.p
+          <motion.h2
             className="text-sm md:text-xl mb-2"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             Izrada web stranica za male i srednje poduzetnike.
-          </motion.p>
-          <motion.p
+          </motion.h2>
+          <motion.h2
             className="text-sm md:text-xl mb-10"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             Stručna podrška u Vašim prvim digitalnim koracima.
-          </motion.p>
+          </motion.h2>
 
           {/* Animated Corner Cards - Hidden on small screens */}
           <CornerCard text="lighning-fast" />

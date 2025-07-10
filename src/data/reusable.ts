@@ -31,33 +31,19 @@ export const whyUs = [
 
 export const weOffer = [
   {
-    title: "Implementacija umjetne inteligencije",
+    title: "Dizajnerske vještine",
     description:
-      "Pametne funkcionalnosti koje koriste AI za automatizaciju, personalizaciju i procese.",
+      "Jedinstven dizajn prilagođen raznim uređajima, animacije teksta i oblika, UX/UI načela usmjerena na korisničko ponašanje...",
   },
   {
-    title: "Animacije oblika i tekstova",
+    title: "Programerska znanje",
     description:
-      "Dodajemo elegantne animacije koje oživljavaju vašu web stranicu i čine je atraktivnijom.",
+      "Implementacija umjetne inteligencije, rezervacijski sustavi, web-shop funkcionalnosti, brzina, podrška i savjeti...",
   },
   {
-    title: "Izrada web shopova",
+    title: "Tehnička rješenja",
     description:
-      "Rzličite razine automatizacije – od djelomične do potpune, uključujući upravljanje proizvodima, naplatu i sigurnost.",
-  },
-  {
-    title: "Stranice za rezervacije",
-    description:
-      "Idealno za salone, ordinacije, trenere i druge uslužne djelatnosti kojima treba online rezervacija termina.",
-  },
-  {
-    title: "SEO optimizacija i brzina",
-    description:
-      "Vaša stranica bit će optimizirana za tražilice i brza na svim uređajima.",
-  },
-  {
-    title: "Prilagodba mobilnim uređajima",
-    description: "Responsive dizajn koji izgleda savršeno na svakom zaslonu.",
+      "Sigurnost i autentikacija, održavanje i nadzor, hosting, domena, CMS integracija, skalabilnost, SEO/GEO optimizacija...",
   },
 ]
 

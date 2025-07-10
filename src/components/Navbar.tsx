@@ -5,6 +5,7 @@ import { HoverLink } from "./HoverLink"
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
+  const [dropdownOpen, setDropdownOpen] = useState(false)
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-black/80 backdrop-blur-md z-50 text-gray-100">
