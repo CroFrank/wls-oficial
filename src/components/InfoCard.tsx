@@ -18,7 +18,7 @@ export const InfoCard: React.FC<InfoCardProps> = ({ title, description }) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 1.5, ease: "easeIn" }}
+        transition={{ duration: 1.2, ease: "easeIn" }}
       >
         <h4 className="text-xl 2xl:text-2xl font-semibold mb-4 2xl:mb-8 text-gray-800">
           {title}

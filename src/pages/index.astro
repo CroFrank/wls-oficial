@@ -6,6 +6,7 @@ import WhyWls from "../components/WhyWls.astro"
 import TimedPopup from "@/components/TimedPopup"
 import About from "@/components/About.astro"
 import CallToAction from "@/components/CallToAction.astro"
+import { FaqMini } from "@/components/FaqMini.tsx"
 ---
 
 <Layout
@@ -18,4 +19,5 @@ import CallToAction from "@/components/CallToAction.astro"
   <WhyWls />
   <CallToAction />
   <About />
+  <FaqMini client:load />
 </Layout>
