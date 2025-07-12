@@ -34,14 +34,15 @@ export const FaqMini = () => {
               </AccordionTrigger>
               <AccordionContent>
                 Cilj održavanja je da svu brigu oko stranice preuzmemo mi, a vi
-                brinete o svom poslovanju. Osnovno održavanje iznosi 80€
+                brinete o svom poslovanju. Osnovno održavanje iznosi 80
+                <span className="euro-symbol"> € </span>
                 godišnje i uključuje: hosting, registraciju i produžetak domene
-                (u vrijednosti do 15€), tehničko održavanje (ažuriranje,
-                nadogradnje na novije verzije, osnovnu sigurnost, tehnički
-                detalji), backup stranice, savjetovanje i podrška. Osnovno
-                održavanje se može proširiti i sa implementacijom i održavanjem
-                usluga trećih strana(cms, email servis, skalabilne baze
-                podataka...).
+                (u vrijednosti do 15<span className="euro-symbol"> €</span>),
+                tehničko održavanje (ažuriranje, nadogradnje na novije verzije,
+                osnovnu sigurnost, tehnički detalji), backup stranice,
+                savjetovanje i podrška. Osnovno održavanje se može proširiti i
+                sa implementacijom i održavanjem usluga trećih strana(cms, email
+                servis, skalabilne baze podataka, analitika...).
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
